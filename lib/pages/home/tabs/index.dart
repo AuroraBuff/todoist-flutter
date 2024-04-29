@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+final Widget svg = SvgPicture.asset(
+  'assets/icons/sort.svg',
+  width: 20,
+  height: 20,
+);
+
 class Index extends StatelessWidget {
   const Index({super.key});
   @override
   Widget build(BuildContext context) {
-    final Widget svg = SvgPicture.asset(
-      'assets/icons/sort.svg',
-      width: 20,
-      height: 20,
-    );
     return Scaffold(
         backgroundColor: const Color.fromRGBO(18, 18, 18, 1),
         body: Container(
